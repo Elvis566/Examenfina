@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<form action="">
+  <div>
+    <label for="">Email</label>
+    <input #email type="text">
+  </div>
+  <div>
+    <label for="">Password</label>
+    <input #password type="password">
+  </div>
+
+  <button (click)="createUser(email, password)">Guardar</button>
+</form>
+
+<button><a routerLink="/empleado">Empleados</a></button>
+</ion-content>
